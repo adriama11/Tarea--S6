@@ -1,0 +1,25 @@
+Algoritmo determinar_capicúa
+	//Dado un número, determine si es capicúa.
+	// un número capicúa es aquel que se lee igual hacia adelante que hacia atrás.
+	Definir numero, numOriginal, invertido, digito Como real
+
+    Escribir "Ingrese un número:"
+    Leer num
+	
+	numOriginal <- num
+    invertido <- 0
+	Mientras num > 0 Hacer
+        digito <- num % 10
+        invertido <- invertido * 10 + digito
+        num <- num / 10
+		invertido <- invertido +1
+    FinMientras
+	
+    Si numOriginal = invertido Entonces
+        Escribir "El número es capicúa"
+    SiNo
+        Escribir "El número no es capicúa"
+    FinSi
+FinAlgoritmo
+	
+

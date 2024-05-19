@@ -1,0 +1,22 @@
+Algoritmo Precio_colas
+	//Algoritmo para determinar cuánto se pagará debe por cierta cantidad de colas
+	Definir costunidad ,cantcompra, totalsiniva ,iva, totalpagar Como Real
+	Escribir "Ingrese la cantidad de colas a comprar: "
+    Leer cantcompra
+	Si cantcompra > 23 Entonces
+		costunidad <- 0.50
+	SiNo
+		costunidad <- 1.20
+	Fin Si
+	//calcular total sin iva
+	totalsiniva <- cantcompra * costunidad
+	//calcular el iva
+    iva <- totalsiniva * 0.12
+	//calcular total a pagar
+    totalpagar <- totalsiniva + iva
+    Escribir "Cantidad Comprada: ", cantcompra
+    Escribir "Costo por Unidad: ", costunidad
+    Escribir "Total sin IVA: ", totalsiniva
+    Escribir "IVA: ", iva
+    Escribir "Total a Pagar: ", totalpagar
+FinAlgoritmo

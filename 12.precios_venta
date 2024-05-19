@@ -1,0 +1,34 @@
+Algoritmo precios_venta
+	
+	Definir materiaPrima, manoDeObra, gastosFabricacion, costoProduccion, precioVenta Como Real
+    Definir clave Como Entero
+	
+	Escribir "Ingrese la clave del artículo (1, 2, 3, 4, 5 o 6): "
+    Leer clave
+	
+	materiaPrima <- 100  // Supongamos que el costo de la materia prima es 100
+    Si clave = 3 o clave = 4 Entonces
+        manoDeObra <- 0.75 * materiaPrima
+    Sino
+        Si clave = 1 o clave = 5 Entonces
+            manoDeObra <- 0.8 * materiaPrima
+        Sino
+            manoDeObra <- 0.85 * materiaPrima
+        FinSi
+    FinSi
+	
+    Si clave = 2 o clave = 5 Entonces
+        gastosFabricacion <- 0.3 * materiaPrima
+    Sino
+        Si clave = 3 o clave = 6 Entonces
+            gastosFabricacion <- 0.35 * materiaPrima
+        Sino
+            gastosFabricacion <- 0.28 * materiaPrima
+        FinSi
+    FinSi
+	
+    costoProduccion <- materiaPrima + manoDeObra + gastosFabricacion
+    precioVenta <- costoProduccion + 0.45 * costoProduccion
+	
+    Escribir "El precio de venta del artículo es: ", precioVenta
+FinAlgoritmo

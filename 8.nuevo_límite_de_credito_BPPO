@@ -1,0 +1,27 @@
+Algoritmo nuevo_límite_de_credito_BPPO
+	//Determinar el nuevo límite de crédito que tendrá una persona en su tarjeta.
+	tipo <- 0
+	limact <- 0 
+	aum <- 0
+	limnuev <- 0
+	Escribir "Ingrese el límite actual de la tarjeta: "
+	Leer limact
+	Escribir "Ingrese el tipo de tarjeta: "
+	Leer tipo
+	Si tipo = 1 Entonces
+		aum <- 100
+	SiNo
+		si tipo = 2 Entonces
+			aum <- 200
+		SiNo
+			Si tipo = 3 Entonces
+				aum <- 300
+			SiNo
+				aum <- 500
+			FinSi
+		FinSi
+	Fin Si
+	limnuev <- limact +  aum
+	limnuev <- limnuev + ( limnuev * 0.10) 
+	Escribir " el límite nuevo de crédito es:" , limnuev
+FinAlgoritmo

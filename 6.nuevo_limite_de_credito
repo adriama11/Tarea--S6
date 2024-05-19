@@ -1,0 +1,26 @@
+Algoritmo nuevo_limite_de_credito
+// Determinar el nuevo límite de crédito que tendrá una persona en su tarjeta
+	tipo <- 0
+	limact <- 0 
+	aum <- 0
+	limnuev <- 0
+	Escribir "Ingrese el límite actual de la tarjeta: "
+	Leer limact
+	Escribir "Ingrese el tipo de tarjeta: "
+	Leer tipo
+	Si tipo = 1 Entonces
+		aum <- 0.25 
+	SiNo
+		si tipo = 2 Entonces
+			aum <- 0.35
+		SiNo
+			Si tipo = 3 Entonces
+				aum <- 0.40
+			SiNo
+				aum <- 0.50
+			FinSi
+		FinSi
+	Fin Si
+	limnuev <- limact + ( limact * aum) +20
+	Escribir " el límite nuevo es:" , limnuev
+FinAlgoritmo

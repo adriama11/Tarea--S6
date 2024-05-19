@@ -1,0 +1,26 @@
+Algoritmo Negativo_positivo
+	// Pedir al usuario un número y mostrar si es negativo menor que -20, 
+    //sino mostrar si es positivo par o impar múltiplo de 7.
+
+    
+    Escribir "Ingrese un número: "
+    Leer num
+	Si num < -20 Entonces
+        Escribir "El número es negativo y menor que -20"
+    Sino
+        Si num > 0 Entonces
+            Si num % 2 = 0 Entonces
+                Escribir "El número es positivo y par"
+            Sino
+                Si num % 7 = 0 Entonces
+                    Escribir "El número es positivo e impar múltiplo de 7"
+                Sino
+                    Escribir "El número es positivo e impar"
+                FinSi
+            FinSi
+        Sino
+            Escribir "El número es cero o no cumple con las condiciones específicas"
+        FinSi
+    FinSi
+  
+FinAlgoritmo

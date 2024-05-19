@@ -1,0 +1,30 @@
+Algoritmo Par_negativo_impar
+	
+	Definir num Como Entero
+	Escribir " Ingrese un número:"
+    Leer num
+	Si num % 2 = 0 Entonces
+	   Si num < 10 Entonces
+		Escribir "El número es par y menor que 10."
+	SiNo
+		Escribir "El número es par pero no es menor que 10."
+	FinSi
+SiNo
+	// Verificar si el número es negativo
+	Si num < 0 Entonces
+		// Verificar si el número es impar
+		Si num % 2 <> 0 Entonces
+			Escribir "El número es negativo e impar."
+            // Verificar si el número es divisible por 5
+		SiNo
+			Si num % 5 = 0 Entonces
+				Escribir "El número es negativo y divisible por 5."
+			SiNo
+				Escribir "El número es negativo pero no es impar ni divisible por 5."
+			FinSi
+		FinSi
+	SiNo
+		Escribir "El número no cumple con ninguna de las condiciones específicas."
+	FinSi
+	FinSi
+FinAlgoritmo

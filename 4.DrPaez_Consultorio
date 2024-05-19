@@ -1,0 +1,46 @@
+Algoritmo DrPaez_Consultorio
+Definir numeroCita, costoCita, totalGastado Como Real
+
+// Inicializar variables
+Escribir "Ingrese el número de cita que se efectuará:"
+Leer numeroCita
+totalGastado <- 0
+
+// Determinar el costo de la cita actual
+   Si numeroCita <= 3 Entonces
+	 costoCita <- 200
+	Sino
+	   Si numeroCita <= 5 Entonces
+		   costoCita <- 150
+	   Sino 
+		   Si numeroCita <= 8 Entonces
+			   costoCita <- 100
+		   Sino
+			   costoCita <- 50
+		   FinSi
+	   FinSi
+	Finsi	
+	// Calcular el total gastado por el paciente hasta la cita actual
+	Para i <- 1 Hasta numeroCita Con Paso 1 Hacer
+	   Si i <= 3 Entonces
+		  totalGastado <- totalGastado + 200
+	  Sino
+		  Si i <= 5 Entonces
+			  totalGastado <- totalGastado + 150
+		  Sino 
+			  Si i <= 8 Entonces
+				  totalGastado <- totalGastado + 100
+			  Sino
+				  totalGastado <- totalGastado + 50
+			  FinSi
+			  
+		  FinSi
+		  
+		FinSi
+	FinPara
+	
+	// Mostrar resultados
+	Escribir "El costo de la cita número ", numeroCita, " es: $", costoCita
+	Escribir "El monto total pagado por el tratamiento hasta la cita número ", numeroCita, " es: $", totalGastado
+FinProceso
+

@@ -1,0 +1,17 @@
+Algoritmo cuantos_digitos
+	//Dado un número entero N, calcular e informar al usuario cuántos dígitos tiene dicho número.
+	
+	Definir N, cont Como Entero
+	
+	Escribir "Ingrese un número entero:"
+    Leer N
+    
+    cont <- 0
+    Mientras N > 0 Hacer
+        N <- N / 10
+        cont <- cont + 1
+    Fin Mientras
+    
+    Escribir "El número tiene ", cont, " dígitos."
+	
+FinAlgoritmo
